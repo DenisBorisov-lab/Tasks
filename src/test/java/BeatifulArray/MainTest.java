@@ -23,8 +23,10 @@ public class MainTest{
     public boolean forTest(ArrayList<Integer> number){
         boolean answer = true;
         for (int i = 1; i < number.size() - 1; i++){
-            if (number.get(i) * 2 == number.get(i - 1) + number.get(i + 1)){
-                answer = false;
+            for (int j = i + 1; j < number.size(); j++){
+                if (number.get(i) * 2 == number.get(i - 1) + number.get(j)){
+                    answer = false;
+                }
             }
         }
         return answer;
