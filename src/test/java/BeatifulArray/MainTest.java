@@ -26,6 +26,7 @@ public class MainTest{
             for (int j = i + 1; j < number.size(); j++){
                 if (number.get(i) * 2 == number.get(i - 1) + number.get(j)){
                     answer = false;
+                    break;
                 }
             }
         }
