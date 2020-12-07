@@ -1,12 +1,9 @@
 package BeatifulArray;
 
-import javax.jnlp.IntegrationService;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
-
-    public static ArrayList<Integer> beautifulArray(int n){
+    public ArrayList<Integer> beautifulArray(int n){
         int value = 0;
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(1);
