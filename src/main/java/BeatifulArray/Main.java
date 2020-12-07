@@ -4,13 +4,12 @@ import java.util.ArrayList;
 
 public class Main {
     public ArrayList<Integer> beautifulArray(int n){
-        int value = 0;
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(1);
         while (numbers.size() < n) {
             ArrayList<Integer> temp = new ArrayList<>();
             for (int i : numbers) {
-                value = i * 2 - 1;
+                int value = i * 2 - 1;
                 if (value <= n) {
                     temp.add(value);
                 }
