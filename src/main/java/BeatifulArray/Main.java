@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class Main {
     public ArrayList<Integer> beautifulArray(int n){
-        ArrayList<Integer> numbers = new ArrayList<>();
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
         numbers.add(1);
         while (numbers.size() < n) {
-            ArrayList<Integer> temp = new ArrayList<>();
+            ArrayList<Integer> temp = new ArrayList<Integer>();
             for (int i : numbers) {
                 int value = i * 2 - 1;
                 if (value <= n) {
